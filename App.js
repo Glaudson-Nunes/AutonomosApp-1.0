@@ -1,14 +1,19 @@
 import React from "react";
-import { View } from "react-native";
-
-
+import { StatusBar } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import Routes from "./src/routes";
 const App = () =>{
 
   return(
 
-    <View>
+    <NavigationContainer>
 
-    </View>
+      <StatusBar backgroundColor="#36393F" barStyle='light-content' translucent={false}/>
+      <Routes/>
+
+    </NavigationContainer>
+
+    
   )
 }
 
